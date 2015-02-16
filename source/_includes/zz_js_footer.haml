@@ -1,0 +1,40 @@
+%script{:src => "ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"}
+:javascript
+  window.jQuery || document.write('<\/script>')
+
+
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+      // controlNav: "thumbnails",
+
+      animationLoop: true,
+      // animation: "slide",
+      // easing: "swing",
+      // direction: "horizontal",
+      slideshowSpeed: 1000,
+      animationSpeed: 1000,
+      // touch: true,
+
+      // controlNav: true,
+      // directionNav: true,
+      // prevText: "Previous",
+      // nextText: "Next",
+
+      keyboard: true
+
+      });
+    });
+
+    $(document).ready(function() {
+     $('blockquote').quovolver(500,10000); // ($speed, $duration)
+    });
+
+
+    $('#drewhead').jrumble({
+      speed: 160
+    });
+    $('#drewhead').hover(function(){
+      $(this).trigger('startRumble');
+          }, function(){
+      $(this).trigger('stopRumble');
+    });

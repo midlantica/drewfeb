@@ -1,0 +1,76 @@
+@import 'base';
+@import 'nav';
+
+// COLORS
+
+
+// END
+
+// BASE LAYOUT
+
+html {
+    background: #333;
+}
+
+body {
+    @include container(960px);
+        background-color: $ivory;
+        background: url(../img/bg/graphy_2.png) repeat;
+    }
+
+main {
+    @include clearfix;
+    @include show-grid(12);
+    padding: 0 1rem;
+}
+.sectionOne {
+    @include span(50%);
+    // background: orange;
+    @include clearfix;
+    // @include show-grid(6);
+
+    @include breakpoint($bg) {
+        background: blue;
+    }
+    @include breakpoint($sm) {
+        @include span(100%);
+        // background: beige;
+    }
+}
+
+.sectionTwo {
+    @include span(50% last);
+    // background: darkorange;
+    @include clearfix;
+    // @include show-grid(6);
+
+    @include breakpoint($bg) {
+        // background: green;
+    }
+    @include breakpoint($sm) {
+        @include span(100%);
+        // background: yellow;
+    }
+}
+// END BASE LAYOUT
+
+header, footer {
+    color: $ivory;
+    @include shadow;
+    background: url(../img/bg/bg_bag_dk.jpg) repeat;
+    @include clearfix;
+}
+
+header {
+    margin: 0 0 1em 0;
+    // background: url(../img/bg/bg_bag_dk.jpg) repeat;
+}
+
+footer {
+    margin: 1em 0 0 0;
+    // background: url(../img/bg/bg_bag_dk.jpg) repeat;
+    h2 {
+        margin: 0.6em 0 0 0.5em;
+    }
+}
+

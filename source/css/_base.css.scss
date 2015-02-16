@@ -1,0 +1,76 @@
+// COMPASS CONFIG???
+@import "compass";
+@import "breakpoint";
+@import "susy";
+
+// SUSY
+$susy: (
+    columns: 12,  // The number of columns in your grid
+    gutters: 1/4, // The size of a gutter in relation to a single column
+    // debug: (image: show),
+    global-box-sizing: border-box,
+    use-custom: (rem: true
+    )
+);
+
+@include border-box-sizing;
+
+$sm: 0px 759px;
+$bg: 760px 1020px;
+
+
+
+// ############################
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    // text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+// ############################
+
+// MY STUFF
+$grey             :#444444;
+$blue-dark        :rgba(70, 100, 110, 1);// #46646E
+$blue-mid         :rgba(91, 125, 150, 1);//#5B7D96
+$blue-light       :rgba(143, 169, 194, 1); //#8FA9C2
+// $accent        :rgba(236,180,105,1.0);//#ECB469 PEACH
+$accent           :orange;
+
+$ivory            :rgba(255, 253, 244, 1);// #FFFDF4 IVORY
+// $orange        :rgba(227,66,52,1.0);// #e34234 Dark ORANGE
+$paleyellow       :rgba(255, 255, 191, 0.6);//pale yellow trans
+$accent-red       :#C02C19;
+
+$base-font-size   :0.85em;
+$base-line-height :1.7em;
+
+$font             :"Helvetica Neue", Arial, sans-serif;
+$font-head        :"VeneerTwo", Helvetica, Arial, sans-serif;
+$font-subhead     :"Veneer", Helvetica, Arial, sans-serif;
+$font-copy        :"AmericanTypewriterStd-Med", Helvetica, Arial, sans-serif;
+
+@mixin shadow {
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+@mixin no-shadow {
+    text-shadow: 0px 0px 0px;
+    filter: none;
+}
+
+a {
+    @include link-colors($normal: $blue-dark, $visited: $blue-dark, $hover: $accent);
+}
+
+$default-text-shadow-color: rgba($accent-red, 1);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-h-offset: 3px;
+
+$rgbapng_path: "img";
+$rgbapng_px_size: 8;
+

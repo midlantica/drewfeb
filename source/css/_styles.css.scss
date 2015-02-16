@@ -1,0 +1,281 @@
+@import "layout";
+
+//  >>>>>>>>>>>>>>
+// TYPE CONTROL
+//  >>>>>>>>>>>>>>
+
+h1, h2, h3, h4, h5 {
+    color: $accent-red;
+    line-height: 1.1em;
+    font-weight: normal;
+    text-align: left;
+    margin: .75em 0 .25em 0;
+    padding: 0;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: $font-head;
+}
+
+h2, h3, h4, h5 {
+    font-family: $font-subhead;
+}
+
+.left .head {
+    margin: 0 0 1em 0;
+    // @include span-columns(6);
+    // @include isolate(1);
+    // @include clearfix;
+    float: left;
+    display: inline-block;
+    clear: both;
+    width: 100%;
+}
+
+.left .head .drewhead {
+    margin: 0 1em 0 0;
+    padding: 0;
+    width: 73px;
+    height: 89px;
+    // background-image: url('/img/ava_head.png');
+    background-image: url("../img/drew_head.png");
+    float: left;
+    display: block;
+    clear: left;
+}
+
+.left .head h1 {
+    font-size: 2.05em;
+    font-family: $font-subhead;
+    // display: inline;
+    // float: left;
+    // clear: left;
+    // width: 340px;
+    margin: 0.95em 0em 0 0;
+    color: $accent-red;
+    line-height: 1.1em;
+    @include single-text-shadow(white);
+    padding: 0 0em 0 0;
+}
+
+.left p {
+    font-size: 0.825rem;
+    color: $grey;
+    display: inline-block;
+    float: left;
+    clear: left;
+    margin: 0 1.5em 0 .8rem;
+    line-height: 2.2em;
+    letter-spacing: 0.075em;
+}
+
+.about {
+    display: inline-block;
+    float: left;
+    // clear: left;
+    // background-color: $paleyellow;
+    background-image: url("../img/bg/bg_bag_y.png");
+    background-repeat: repeat;
+    margin: .3em 0 1em 0;
+    padding: 1em .5em .3em .75em;
+    width: 95.4%;
+    @include shadow;
+}
+
+.aboutinner {
+    display: inline-block;
+    // @include susy-grid-background;
+}
+
+.about .british_american_flag {
+    @include span-columns(2);
+    @include isolate(1);
+}
+
+.about .british_american_flag img {
+    width: 100%;
+    height: auto;
+}
+
+.about .copy {
+    font-size: .85em;
+    @include span-columns(10);
+    @include isolate(3);
+}
+
+.about .copy p {
+    margin: 0 0 0 1em;
+}
+
+h2 {
+    font-size: 2.25em;
+    color: $accent;
+    text-transform: capitalize;
+    font-family: $font-subhead;
+}
+
+.content h2 {
+    //
+    &:first-of-type {
+        margin: 0 0 0 0;
+    }
+    &:last-of-type {
+        margin: 0.6em 0 0 0.5em;
+    }
+
+}
+
+h3 {
+    font-size: 1.7em;
+    color: $blue-dark;
+}
+
+h4 {
+    font-size: 1.5em;
+    letter-spacing: .04em;
+}
+
+h5 {
+    font-size: $base-font-size;
+}
+
+p {
+    font-family: $font-copy;
+    color: $blue-mid;
+    line-height: $base-line-height;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    // letter-spacing: -.025em;
+}
+
+ul {
+    list-style-type: square;
+    padding: 0;
+    margin: 0 -1em 1em 0em;
+    font-family: $font-copy;
+    color: $blue-mid;
+    line-height: $base-line-height;
+    text-align: left;
+}
+
+li {
+    list-style-position: outside;
+    margin: .25em 0em 0 1em;
+    padding-left: -1em;
+    line-height: 1.6em;
+}
+
+.indent {
+    padding-left: 1.5em;
+}
+
+.one {
+    // @include span-columns(3,12);
+    background-color: $blue-light;
+    // border: 1px solid $blue-light;
+    background: url(../img/bg-steel-02.png) repeat;
+    margin: 0 0 1em 0;
+}
+
+.two {
+    // @include span-columns(3,12);
+    background-color: $blue-light;
+    // border: 1px solid $blue-light;
+    background: url(../img/bg-steel-02.png) repeat;
+    margin: 0 0 1em 0;
+}
+
+.three {
+    // @include span-columns(3,12);
+    background-color: $blue-light;
+    // border: 1px solid $blue-light;
+    background: url(../img/bg-steel-02.png) repeat;
+    margin: 0 0 1em 0;
+}
+
+.four {
+    // @include span-columns(2 omega,8);
+    background-color: $blue-light;
+    // border: 1px solid $blue-light;
+    // background: url(../img/bg-steel-02.png) repeat;
+    margin: 0 0 1em 0;
+}
+
+
+.right .flexslider {
+    // width: 432px;
+    // height: 310px;
+    background-color: $ivory;
+    background-color: $ivory;
+    background-color: $ivory;
+    display: block;
+    clear: both;
+    margin: 2em 0 1em 0;
+    // @include span-columns(10);
+    // @include isolate(3);
+    float: left;
+    clear: both;
+    padding: 0;
+    width: 98%;
+    @include shadow;
+}
+
+.flexslider .slides img {
+    width: 100%;
+    height: auto;
+}
+
+.slides > li {
+    margin: 0em;
+}
+
+.flex-control-nav {
+    display: none;
+}
+
+.quote {
+    // padding: 0;
+    float: left;
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 0em 0 0em 0;
+    // @include span-columns(10);
+    // background: red;
+}
+
+blockquote {
+    // width: 432px;
+    // height: 73px;
+    background-color: darkred;
+    margin: 0;
+    padding: .25em 1em .75em 1em;
+    // @include shadow;
+    // @include span-columns(10);
+    // @include isolate(3);
+    // width: 424px;/* required */
+    @include shadow;
+}
+
+.right blockquote p {
+    color: $ivory;
+    padding: .75em .5em 0em .5em;
+    text-align: center;
+    letter-spacing: .08em;
+    font-size: .95em;
+}
+
+blockquote cite {
+    color: $ivory;
+    font-style: italic;
+    margin: 0 4em 0 0;
+    display: block;
+    text-align: right;
+    font-size: .8em;
+    letter-spacing: .08em;
+}
