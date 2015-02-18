@@ -1,56 +1,55 @@
-    <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>')</script>
-    <%= javascript_include_tag  "plugins" %>
+  <!-- <script src="ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+  <script src="js/vendor/jquery-1.9.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
-    <!-- ########################## -->
-    <!-- CUSTOM JAVASCRIPT HERE -->
-    <!-- ########################## -->
+  <!-- ########################## -->
+  <!-- CUSTOM JAVASCRIPT HERE -->
+  <!-- ########################## -->
 
-    <!-- FLEXSLIDER JS -->
-    <script src="js/vendor/jquery.flexslider.js"></script>
-    <script type="text/javascript" charset="utf-8">
-          $(window).load(function() {
-            $('.flexslider').flexslider({
-            // controlNav: "thumbnails",
+  <!-- FLEXSLIDER JS -->
+  <script src="js/vendor/jquery.flexslider.js"></script>
+  <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+          // controlNav: "thumbnails",
 
-            animationLoop: true,
-            // animation: "slide",
-            // easing: "swing",
-            // direction: "horizontal",
-            slideshowSpeed: 1000,
-            animationSpeed: 1000,
-            // touch: true,
+          animationLoop: true,
+          // animation: "slide",
+          // easing: "swing",
+          // direction: "horizontal",
+          slideshowSpeed: 1000,
+          animationSpeed: 1000,
+          // touch: true,
 
-            // controlNav: true,
-            // directionNav: true,
-            // prevText: "Previous",
-            // nextText: "Next",
+          // controlNav: true,
+          // directionNav: true,
+          // prevText: "Previous",
+          // nextText: "Next",
 
-            keyboard: true
+          keyboard: true
 
-            });
           });
-    </script>
-    <!-- // -->
-
-    <!-- QUOVOLVER -->
-    <script src="js/vendor/jquery.quovolver.js"></script>
-    <script type="text/javascript" charset="utf-8">
-         $(document).ready(function() {
-           $('blockquote').quovolver(500,10000); // ($speed, $duration)
-       });
-    </script>
-    <!-- // -->
-
-    <!-- JRUMBLE -->
-    <script src="js/vendor/jquery.jrumble.1.3.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        $('#drewhead').jrumble({
-            speed: 160
         });
-        $('#drewhead').hover(function(){
-            $(this).trigger('startRumble');
-                }, function(){
-            $(this).trigger('stopRumble');
-        });
-    </script>
-    <!-- // -->
+  </script>
+
+  <script src="js/vendor/jquery.quovolver.js"></script>
+  <script type="text/javascript" charset="utf-8">
+       $(document).ready(function() {
+         $('blockquote').quovolver(500,10000); // ($speed, $duration)
+     });
+  </script>
+
+  <script src="js/vendor/jquery.jrumble.1.3.js"></script>
+  <script type="text/javascript" charset="utf-8">
+      $('#drewhead').jrumble({
+          speed: 160
+      });
+      $('#drewhead').hover(function(){
+          $(this).trigger('startRumble');
+              }, function(){
+          $(this).trigger('stopRumble');
+      });
+  </script>
+

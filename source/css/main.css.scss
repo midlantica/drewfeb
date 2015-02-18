@@ -1,6 +1,7 @@
 @import 'base';
 @import 'layout';
 @import 'nav';
+@import 'skills';
 
 //  >>>>>>>>>>>>>>
 // TYPE CONTROL
@@ -33,19 +34,20 @@ h2, h3, h4, h5 {
     width: 100%;
 }
 
-.sectionOne .head .drewhead {
+.sectionOne .drewhead {
     margin: 0 1em 0 0;
     padding: 0;
     width: 73px;
     height: 89px;
-    background: url("../img/drew_head.png");
+    background-image: url('../img/drew_head.png');
+    // background: url("../img/drew_head.png");
     // background-image: url("img/drew_head.png");
     float: left;
     display: block;
     clear: left;
 }
 
-.sectionOne .head h1 {
+.sectionOne h1 {
     font-size: 2.05em;
     font-family: $font-subhead;
     margin: 0.95em 0em 0 0;
@@ -56,25 +58,26 @@ h2, h3, h4, h5 {
 }
 
 .sectionOne p {
-    font-size: 0.825rem;
+    font-size: 0.9rem;
     color: $grey;
     display: inline-block;
     float: left;
     clear: left;
-    margin: 0 1.5em 0 .8rem;
-    line-height: 2.2em;
+    margin: 1em 1.5em 1em .8rem;
+    line-height: 2.4em;
     letter-spacing: 0.075em;
 }
 
 .about {
-    display: inline-block;
-    float: left;
+    // display: inline-block;
+    // float: left;
     background-image: url("../img/bg/bg_bag_y.png");
     background-repeat: repeat;
     margin: .3em 0 1em 0;
-    padding: 1em .5em .3em .75em;
-    width: 95.4%;
+    padding: 0.7em 1em 0.8em 0.85em;
+    // width: 95.4%;
     @include shadow;
+    @include span(100%);
 }
 
 .aboutinner {
@@ -83,22 +86,21 @@ h2, h3, h4, h5 {
 
 .about .british_american_flag {
     @include span(2);
-    @include isolate(1);
-}
-
-.about .british_american_flag img {
-    width: 100%;
-    height: auto;
+    // @include isolate(1);
+    img {
+        width: 100%;
+        height: auto;
+        margin-top: 0.3em;
+    }
 }
 
 .about .copy {
     font-size: .85em;
-    @include span(10);
-    @include isolate(3);
-}
-
-.about .copy p {
-    margin: 0 0 0 1em;
+    @include span(10 last);
+    // @include isolate(3);
+    p {
+        margin: 0 0 0 1em;
+    }
 }
 
 h2 {
@@ -164,30 +166,6 @@ li {
     padding-left: 1.5em;
 }
 
-.one {
-    background: $blue-light;
-    background: url(../img/bg-steel-02.png) repeat;
-    margin: 0 0 1em 0;
-}
-
-.two {
-    background: $blue-light;
-    background: url(../img/bg-steel-02.png) repeat;
-    margin: 0 0 1em 0;
-}
-
-.three {
-    background: $blue-light;
-    background: url(../img/bg-steel-02.png) repeat;
-    margin: 0 0 1em 0;
-}
-
-.four {
-    background: $blue-light;
-    margin: 0 0 1em 0;
-}
-
-
 .sectionTwo .flexslider {
     background: $ivory;
     display: block;
@@ -208,6 +186,7 @@ li {
 
 .slides > li {
     margin: 0em;
+    display: none;
 }
 
 .flex-control-nav {
@@ -235,7 +214,7 @@ blockquote {
     padding: .75em .5em 0em .5em;
     text-align: center;
     letter-spacing: .08em;
-    font-size: .95em;
+    font-size: .85em;
 }
 
 blockquote cite {

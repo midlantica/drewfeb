@@ -1,0 +1,45 @@
+.skills {
+    display: inline-block;
+    float: left;
+    clear: left;
+    margin: .5em 0 0 0;
+    padding: 0;
+    text-align: center;
+    .col1 {
+        @include span(1 of 4);
+        // @include isolate(1);
+        // clear: left;
+        // display: inline-block;
+
+    }
+    .col2 {
+        @include span(1 of 4);
+        // @include isolate(4);
+        // clear: left;
+        // display: inline-block;
+
+    }
+    .col3 {
+        @include span(1 of 4);
+        // @include isolate(7);
+        // clear: left;
+        // display: inline-block;
+
+    }
+    .col4 {
+        @include span(1 of 4 last);
+        // @include isolate(10);
+        // clear: left;
+        // display: inline-block;
+
+    }
+    .icon {
+        display: inline-block;
+        clear: left;
+        // margin: 0 0 1em 0;
+        margin: 0 0.7rem 1rem;
+        padding: 0;
+        width: 68px;
+        text-align: center;
+    }
+}

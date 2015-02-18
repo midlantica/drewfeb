@@ -14,15 +14,13 @@
 
     <!-- STYLES -->
     <%= stylesheet_link_tag "normalize", "html5Boilerplate" %>
-    <%= stylesheet_link_tag "flexslider" %>
     <%= stylesheet_link_tag "fonts/veneer/veneer" %>
     <%= stylesheet_link_tag "fonts/American_typewriter/american_typewriter/american_typewriter" %>
+    <%= stylesheet_link_tag "flexslider" %>
     <%= stylesheet_link_tag "main" %>
 
     <!-- JAVASCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <%= javascript_include_tag  "all" %>
-    <%= javascript_include_tag  "vendor/flexslider" %>
 
   </head>
 
@@ -30,7 +28,8 @@
     <%= yield %>
   </body>
 
-  <%# partial "_includes/js_footer" %>
+  <%= partial "_includes/js_footer" %>
+
 
 
 </html>
