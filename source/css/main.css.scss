@@ -35,10 +35,10 @@ h2, h3, h4, h5 {
 }
 
 .sectionOne .drewhead {
-    margin: 0 1em 0 0;
+    margin: 0 1em 0 .5em;
     padding: 0;
-    width: 73px;
-    height: 89px;
+    width: 72px;
+    height: 88px;
     background-image: url('../img/drew_head.png');
     // background: url("../img/drew_head.png");
     // background-image: url("img/drew_head.png");
@@ -48,13 +48,23 @@ h2, h3, h4, h5 {
 }
 
 .sectionOne h1 {
-    font-size: 2.05em;
+    font-size: 1.9em;
     font-family: $font-subhead;
-    margin: 0.95em 0em 0 0;
+    margin: 0.5em 0em 0 0;
     color: $accent-red;
     line-height: 1.1em;
     @include single-text-shadow(white);
     padding: 0 0em 0 0;
+    -webkit-font-smoothing: initial;
+    @include breakpoint($md) {
+        font-size: 1.5em;
+        margin: 0.9em 0 0;
+    }
+    @include breakpoint($sm) {
+        font-size: 2.1em;
+        margin: 0.3em 0 0;
+        // width: 70%;
+    }
 }
 
 .sectionOne p {
@@ -63,7 +73,7 @@ h2, h3, h4, h5 {
     display: inline-block;
     float: left;
     clear: left;
-    margin: 1em 1.5em 1em .8rem;
+    margin: 1.2em 1.5em 0.7em .8rem;
     line-height: 2.4em;
     letter-spacing: 0.075em;
 }
@@ -170,11 +180,12 @@ li {
     background: $ivory;
     display: block;
     clear: both;
-    margin: 2em 0 1em 0;
+    margin: 0.8em 0 1em 0;
     float: left;
     clear: both;
     padding: 0;
-    width: 98%;
+    // width: 98%;
+    @include span(100%);
     @include shadow;
     @include clearfix;
 }

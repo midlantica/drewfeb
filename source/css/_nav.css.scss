@@ -60,6 +60,9 @@
     @include breakpoint($sm) {
         font-size: 1.25em;
     }
+    // @include breakpoint($Eight60down) {
+    //     background: blue;
+    // }
 
     .email {
         line-height: 1.1em;
@@ -125,7 +128,7 @@
     .nav .contact {
         margin: -2em 1em 0 0;
         padding: 0;
-        display: inline-block;
+        // display: inline-block;
         float: right;
         clear: right;
         width: auto;
@@ -160,11 +163,71 @@
     }
 }
 
-// MINI TABLET
-// MINI TABLET
-// MINI TABLET
-// MINI TABLET
-// MINI TABLET
+@include breakpoint($md) {
+    .nav h1 {
+        font-size: 4.8em;
+        margin: .15em 0 -4px -4px;
+        display: block;
+        float: left;
+        clear: left;
+        // background-color: orange;
+        // @include span-columns(6);
+        // @include isolate(2);
+
+    }
+    .nav h2 {
+        font-size: 2.25em;
+        // float: right;
+        margin: 0.2em 0 0.4em 0;
+        letter-spacing: 0em;
+        // width: inherit;
+        display: block;
+        float: left;
+        clear: left;
+        width: auto;
+
+    }
+    .nav .contact {
+        margin: -2em 1em 0 0;
+        padding: 0;
+        // display: inline-block;
+        float: right;
+        clear: right;
+        width: auto;
+        // background: red;
+
+    }
+    .nav .contact .email {
+        font-size: 1.3em;
+        line-height: 1.3em;
+        margin: 0;
+        padding: 0;
+        letter-spacing: .08em;
+        // display: inline-block;
+        // float: left;
+        text-align: center;
+        letter-spacing: 1px;
+        width: auto;
+    }
+    .nav .contact .resume {
+        font-size: .96em;
+        // line-height: 1.5em;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        // display: inline-block;
+        // float: left;
+        text-align: center;
+        letter-spacing: 1px;
+        width: auto;
+        // background: red;
+
+    }
+
+}
+
+
+
 // MINI TABLET
 // MINI TABLET
 
@@ -222,63 +285,4 @@
     }
 }
 
-// // MOBILE
-// // MOBILE
-// // MOBILE
-// // MOBILE
-// // MOBILE
-// // MOBILE
-
-// @include breakpoint($mobile) {
-//     .nav h1 {
-//         font-size: 4.925em;
-//         clear: both;
-//         // background-color: red;
-
-//     }
-//     .nav h2 {
-//         font-size: 2.23em;
-//         margin: .2em 0 .15em 0;
-//         letter-spacing: .01em;
-//         clear: both;
-//     }
-//     .nav .contact {
-//         width: 100%;
-//         float: left;
-//         clear: both;
-//         margin: 0 0 1em 0;
-//     }
-//     .nav .contact .email {
-//         font-size: 1em;
-//         width: auto;
-//         display: block;
-//         float: left;
-//         clear: left;
-//         margin: 0;
-//     }
-//     .nav .contact .resume {
-//         font-size: 1em;
-//         width: auto;
-//         display: block;
-//         float: left;
-//         clear: right;
-//         margin: .2em 0 0 1em;
-//     }
-//     footer .nav .contact .email {
-//         font-size: 1em;
-//         width: auto;
-//         display: block;
-//         float: left;
-//         clear: left;
-//         margin: 0;
-//     }
-//     footer .nav .contact .resume {
-//         font-size: 1em;
-//         display: block;
-//         float: left;
-//         clear: right;
-//         margin: .15em 0 0 1em;
-//     }
-
-// }
 

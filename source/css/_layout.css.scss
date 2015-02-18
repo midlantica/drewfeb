@@ -11,10 +11,46 @@ html {
 }
 
 body {
+    background-color: $ivory;
+    background: url(../img/bg/graphy_2.png) repeat;
     @include container(960px);
-        background-color: $ivory;
-        background: url(../img/bg/graphy_2.png) repeat;
+
+    /* #### Mobile Phones Portrait #### */
+    @media screen and (max-device-width: 480px) and (orientation: portrait){
+      // background: red;
+      .sectionOne,
+      .sectionTwo {
+        @include span(100%);
+      }
     }
+
+    /* #### Mobile Phones Landscape #### */
+    @media screen and (max-device-width: 640px) and (orientation: landscape){
+      // background: red;
+    }
+
+    /* #### Mobile Phones Portrait or Landscape #### */
+    @media screen and (max-device-width: 640px){
+      // background: red;
+    }
+
+    /* #### iPhone 4+ Portrait or Landscape #### */
+    @media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+      // background: red;
+    }
+
+    /* #### Tablets Portrait or Landscape #### */
+    @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+      // background: red;
+    }
+
+    /* #### Desktops #### */
+    @media screen and (min-width: 1024px){
+      // background: red;
+    }
+
+
+}
 
 main {
     @include clearfix;
