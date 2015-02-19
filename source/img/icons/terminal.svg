@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1166px" height="786px" viewBox="0 0 1166 786" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>terminal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="41.947955" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#D1D1D1" offset="0%"></stop>
+            <stop stop-color="#BABABA" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="52.0804882%" cy="50%" fx="52.0804882%" fy="50%" r="47.9195118%" id="radialGradient-3">
+            <stop stop-color="#68727E" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="4" in="SourceAlpha" operator="dilate" result="shadowSpreadInner1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadInner1" result="shadowOffsetInner1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.923342645   0 0 0 0 0.922169268   0 0 0 0 0.911999643  0 0 0 0.7 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="shadow" sketch:type="MSLayerGroup" transform="translate(69.000000, 398.000000)" filter="url(#filter-1)" fill="#000000" fill-opacity="0.170000002">
+            <ellipse id="Oval-15" sketch:type="MSShapeGroup" cx="516" cy="152" rx="516" ry="152"></ellipse>
+        </g>
+        <g id="terminal" sketch:type="MSLayerGroup" transform="translate(270.000000, 100.000000)">
+            <g id="Rectangle-6-+-Rectangle-7" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-7" fill="url(#linearGradient-2)" x="0" y="0" width="629" height="530" rx="7"></rect>
+                <rect id="Rectangle-6" fill="url(#radialGradient-3)" filter="url(#filter-4)" x="54.1586103" y="46.2545455" width="521.632931" height="438.454545" rx="7"></rect>
+            </g>
+            <path d="M207.500372,187.757989 L376.040839,267.988245 L207.500372,350.477023 L207.500372,393.227019 L421.499628,288.977449 L421.499628,246.846024 L207.500372,142.482137 L207.500372,187.757989 Z" id="Path-81" fill="#CAD8E9" sketch:type="MSShapeGroup"></path>
+        </g>
+        <g id="SLICES" sketch:type="MSLayerGroup" transform="translate(-1.000000, -1228.000000)"></g>
+    </g>
+</svg>
