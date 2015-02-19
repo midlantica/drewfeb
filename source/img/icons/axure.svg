@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="1166px" height="786px" viewBox="0 0 1166 786" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="41px" height="40px" viewBox="0 0 41 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>axure</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
-            <feGaussianBlur stdDeviation="41.947955" in="SourceGraphic" result="blur"></feGaussianBlur>
-        </filter>
-    </defs>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="shadow" sketch:type="MSLayerGroup" transform="translate(82.000000, 401.000000)" filter="url(#filter-1)" fill="#000000" fill-opacity="0.170000002">
-            <ellipse id="Oval-15" sketch:type="MSShapeGroup" cx="516" cy="152" rx="516" ry="152"></ellipse>
-        </g>
-        <g id="axure" sketch:type="MSLayerGroup" transform="translate(331.000000, 95.000000)">
-            <rect id="Rectangle-11" fill="#94CA44" sketch:type="MSShapeGroup" x="0" y="0" width="535" height="110.208274"></rect>
-            <g id="Rectangle-11-+-Rectangle-11" transform="translate(0.334301, 154.887304)" sketch:type="MSShapeGroup">
-                <rect id="Rectangle-11" fill="#049ADC" x="0" y="0" width="157.746871" height="367.112696"></rect>
-                <rect id="Rectangle-11" fill="#F2208A" x="208.344924" y="0" width="323.67872" height="367.112696"></rect>
+        <g id="axure" sketch:type="MSLayerGroup" transform="translate(0.414347, 0.776972)">
+            <rect id="Rectangle-11" fill="#94CA44" sketch:type="MSShapeGroup" x="0" y="0" width="40.1696325" height="8.27481469"></rect>
+            <g id="Rectangle-11-+-Rectangle-11" transform="translate(0.025100, 11.629469)" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-11" fill="#049ADC" x="0" y="0" width="11.8441754" height="27.5640786"></rect>
+                <rect id="Rectangle-11" fill="#F2208A" x="15.6432505" y="0" width="24.302907" height="27.5640786"></rect>
             </g>
-            <g id="Rectangle-11-+-Rectangle-11" transform="translate(0.334301, 154.142653)" sketch:type="MSShapeGroup">
-                <path d="M0,0 L157.746871,0 L157.746871,136.594846 L0,173.668934 L0,0 Z" id="Rectangle-11" fill="#32B1E2"></path>
-                <path d="M208.344924,0 L530.535466,0 L530.535466,49.8183067 L208.344924,133.374034 L208.344924,0 Z" id="Rectangle-11" fill="#FC339C"></path>
+            <g id="Rectangle-11-+-Rectangle-11" transform="translate(0.025100, 11.573558)" sketch:type="MSShapeGroup">
+                <path d="M0,0 L11.8441754,0 L11.8441754,10.2560089 L0,13.0396584 L0,0 Z" id="Rectangle-11" fill="#32B1E2"></path>
+                <path d="M15.6432505,0 L39.83442,0 L39.83442,3.7405291 L15.6432505,10.0141793 L15.6432505,0 Z" id="Rectangle-11" fill="#FC339C"></path>
             </g>
         </g>
-        <g id="SLICES" sketch:type="MSLayerGroup" transform="translate(-2538.000000, -2326.000000)"></g>
     </g>
 </svg>
