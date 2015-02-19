@@ -73,7 +73,7 @@ h2, h3, h4, h5 {
     display: inline-block;
     float: left;
     clear: left;
-    margin: 1.2em 1.5em 0.7em .8rem;
+    margin: 1.2em 1.5em 0em .8rem;
     line-height: 2.4em;
     letter-spacing: 0.075em;
 }
@@ -147,7 +147,7 @@ h5 {
 
 p {
     font-family: $font-copy;
-    color: $blue-mid;
+    color: $grey;
     line-height: $base-line-height;
     font-weight: normal;
     text-align: left;
@@ -211,29 +211,31 @@ li {
     width: 100%;
     height: 100px;
     margin: 0em 0 0em 0;
+
+    blockquote {
+        background: darkred;
+        margin: 0;
+        padding: .25em 1em .75em 1em;
+        @include shadow;
+
+        p {
+            color: $ivory;
+            padding: .75em .5em 0em .5em;
+            text-align: center;
+            letter-spacing: .08em;
+            font-size: .85em;
+        }
+        cite {
+            color: $ivory;
+            font-style: italic;
+            margin: 0 4em 0 0;
+            display: block;
+            text-align: right;
+            font-size: .8em;
+            letter-spacing: .08em;
+        }
+    }
 }
 
-blockquote {
-    background: darkred;
-    margin: 0;
-    padding: .25em 1em .75em 1em;
-    @include shadow;
-}
 
-.sectionTwo blockquote p {
-    color: $ivory;
-    padding: .75em .5em 0em .5em;
-    text-align: center;
-    letter-spacing: .08em;
-    font-size: .85em;
-}
 
-blockquote cite {
-    color: $ivory;
-    font-style: italic;
-    margin: 0 4em 0 0;
-    display: block;
-    text-align: right;
-    font-size: .8em;
-    letter-spacing: .08em;
-}

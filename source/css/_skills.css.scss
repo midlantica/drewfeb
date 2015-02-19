@@ -1,45 +1,142 @@
 .skills {
-    display: inline-block;
-    float: left;
-    clear: left;
+    @include span(100%);
+    // display: inline-block;
+    // float: left;
+    // clear: left;
     margin: .5em 0 0 0;
     padding: 0;
     text-align: center;
-    .col1 {
+    .col1,
+    .col2,
+    .col3,
+    .col4 {
         @include span(1 of 4);
-        // @include isolate(1);
-        // clear: left;
-        // display: inline-block;
-
-    }
-    .col2 {
-        @include span(1 of 4);
-        // @include isolate(4);
-        // clear: left;
-        // display: inline-block;
-
-    }
-    .col3 {
-        @include span(1 of 4);
-        // @include isolate(7);
-        // clear: left;
-        // display: inline-block;
-
+        padding-left: 0.2em;
     }
     .col4 {
         @include span(1 of 4 last);
-        // @include isolate(10);
-        // clear: left;
-        // display: inline-block;
-
     }
     .icon {
         display: inline-block;
         clear: left;
-        // margin: 0 0 1em 0;
         margin: 0 0.7rem 1rem;
         padding: 0;
-        width: 68px;
         text-align: center;
+        width: 68px;
+        height: 72px;
+        @include clearfix;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.uiux {
+            background: url(../img/icons/icon_uiux.png);
+        }
+        &.terminal {
+            background: url(../img/icons/icon_terminal.png);
+        }
+        &.yo {
+            background: url(../img/icons/icon_yo.png);
+        }
+        &.html5 {
+            background: url(../img/icons/icon_html5.png);
+        }
+        &.sublime_text {
+            background: url(../img/icons/icon_sublime_text.png);
+        }
+        &.javascript {
+            background: url(../img/icons/icon_javascript.png);
+        }
+        &.css3 {
+            background: url(../img/icons/icon_css3.png);
+        }
+        &.sass {
+            background: url(../img/icons/icon_sass.png);
+        }
+        &.axure {
+            background: url(../img/icons/icon_axure.png);
+        }
+        &.cs {
+            background: url(../img/icons/icon_cs.png);
+        }
+        &.compass {
+            background: url(../img/icons/icon_compass.png);
+        }
+        &.ruby {
+            background: url(../img/icons/icon_ruby.png);
+        }
     }
 }
+
+ /* #### iPhone 4+ Portrait or Landscape #### */
+    @media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .skills {
+        display: inline-block;
+        float: left;
+        clear: left;
+        margin: .5em 0 0 0;
+        padding: 0;
+        text-align: center;
+        .col1,
+        .col2,
+        .col3,
+        .col4 {
+            @include span(1 of 4);
+            padding-left: 0.2em;
+        }
+        .col4 {
+            @include span(1 of 4 last);
+        }
+        .icon {
+            display: inline-block;
+            clear: left;
+            margin: 0 0.7rem 1rem;
+            text-align: center;
+            width: 137px;
+            height: 140px;
+            @include clearfix;
+            padding-left: 1em;
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &.uiux {
+                background: url(../img/icons/icon_uiux@2x.png);
+            }
+            &.terminal {
+                background: url(../img/icons/icon_terminal@2x.png);
+            }
+            &.yo {
+                background: url(../img/icons/icon_yo@2x.png);
+            }
+            &.html5 {
+                background: url(../img/icons/icon_html5@2x.png);
+            }
+            &.sublime_text {
+                background: url(../img/icons/icon_sublime_text@2x.png);
+            }
+            &.javascript {
+                background: url(../img/icons/icon_javascript@2x.png);
+            }
+            &.css3 {
+                background: url(../img/icons/icon_css3@2x.png);
+            }
+            &.sass {
+                background: url(../img/icons/icon_sass@2x.png);
+            }
+            &.axure {
+                background: url(../img/icons/icon_axure@2x.png);
+            }
+            &.cs {
+                background: url(../img/icons/icon_cs@2x.png);
+            }
+            &.compass {
+                background: url(../img/icons/icon_compass@2x.png);
+            }
+            &.ruby {
+                background: url(../img/icons/icon_ruby@2x.png);
+            }
+        }
+    }
+}
+

@@ -31,22 +31,213 @@ body {
 
     /* #### Mobile Phones Portrait or Landscape #### */
     @media screen and (max-device-width: 640px){
-      // background: red;
+      // background: orange;
     }
 
     /* #### iPhone 4+ Portrait or Landscape #### */
     @media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
-      // background: red;
+        // background: purple;
+        .nav h1 {
+            font-size: 4.8em;
+            margin: .15em 0 -4px -4px;
+            display: block;
+            float: left;
+            clear: left;
+            // background-color: orange;
+            // @include span-columns(6);
+            // @include isolate(2);
+
+        }
+        .nav h2 {
+            font-size: 2.25em;
+            // float: right;
+            margin: 0.2em 0 0.4em 0;
+            letter-spacing: 0em;
+            // width: inherit;
+            display: block;
+            float: left;
+            clear: left;
+            width: auto;
+            // background: red;
+            // @include breakpoint($smSm) {
+            //  font-size: 2.25em;
+            // }
+
+        }
+        .nav .contact {
+            margin: -2em 1em 0 0;
+            padding: 0;
+            // display: inline-block;
+            float: right;
+            clear: right;
+            width: auto;
+            // background-color: red;
+
+        }
+        .nav .contact .email {
+            font-size: 1.3em;
+            line-height: 1.3em;
+            margin: 0;
+            padding: 0;
+            letter-spacing: .08em;
+            // display: inline-block;
+            // float: left;
+            text-align: center;
+            letter-spacing: 1px;
+            width: auto;
+        }
+        .nav .contact .resume {
+            font-size: .96em;
+            // line-height: 1.5em;
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            // display: inline-block;
+            // float: left;
+            text-align: center;
+            letter-spacing: 1px;
+            width: auto;
+            // background: red;
+        }
+        .sectionOne {
+            h1 {
+                font-size: 4rem;
+                margin: 3.2rem 0 0;
+                -webkit-font-smoothing: initial;
+            }
+            p {
+                font-size: 2rem;
+            }
+            .drewhead {
+                margin: 0 1em 0 .5em;
+                padding: 0;
+                width: 207px;
+                height: 239px;
+                background-image: url('../img/drew_head_bg.png');
+                float: left;
+                display: block;
+                clear: left;
+            }
+        }
+
+
+        .nav h1 {
+            font-size: 11.3em;
+            margin: 0.1em 1rem 0em;
+            letter-spacing: .02em;
+        }
+        .nav h2 {
+            font-size: 5em;
+            margin: 0em 1.2rem 0em;
+            letter-spacing: 1px;
+            clear: both;
+        }
+        .nav .contact {
+            width: auto;
+            float: left;
+            clear: both;
+            margin: 0.5rem 1.2rem 1rem;
+            padding: 0 0 0 0;
+            font-size: 2.54rem;
+            .email {
+                width: auto;
+                display: block;
+                float: left;
+                clear: left;
+                margin: 0;
+                font-size: 2.54rem;
+            }
+            .resume {
+                width: auto;
+                display: block;
+                float: left;
+                clear: right;
+                margin: .13em 0 0 1em;
+                font-size: 2.54rem;
+
+            }
+        }
+        footer .nav .contact .email {
+            width: auto;
+            display: block;
+            float: left;
+            clear: left;
+            margin: 0;
+        }
+        footer .nav .contact .resume {
+            display: block;
+            float: left;
+            clear: right;
+            margin: .2em 0 0 1em;
+        }
+
+        .about .british_american_flag {
+            @include span(2);
+            // @include isolate(1);
+            img {
+                width: 100%;
+                height: auto;
+                margin-top: 0.3em;
+            }
+        }
+        .about .copy {
+            font-size: 2em;
+            @include span(10 last);
+            // @include isolate(3);
+            p {
+                margin: 0 0 0 1em;
+            }
+        }
+
+        .quote {
+            float: left;
+            clear: both;
+            display: block;
+            width: 100%;
+            margin: 0em 0 0em 0;
+            height: 180px;
+            @include clearfix;
+
+            blockquote {
+                background: darkred;
+                margin: 0;
+                padding: 0.15em 1em 0em;
+                // height: 600px;
+                @include shadow;
+                @include clearfix;
+
+                p {
+                    color: $ivory;
+                    padding: .75em .5em 0em .5em;
+                    text-align: center;
+                    letter-spacing: .08em;
+                    font-size: 2em;
+                    line-height: 2.5rem;
+                    @include clearfix;
+                }
+                cite {
+                    color: $ivory;
+                    font-style: italic;
+                    margin: 0 4em 1.7rem 0;
+                    display: block;
+                    text-align: right;
+                    font-size: 1.5em;
+                    // letter-spacing: 1.3em;
+                    @include clearfix;
+                }
+            }
+        }
+
     }
 
     /* #### Tablets Portrait or Landscape #### */
     @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
-      // background: red;
+      // background: blue;
     }
 
     /* #### Desktops #### */
     @media screen and (min-width: 1024px){
-      // background: red;
+      // background: yellow;
     }
 
 
@@ -100,7 +291,7 @@ header {
 }
 
 footer {
-    margin: 1em 0 0 0;
+    margin: 0em 0 0 0;
     h2 {
         margin: 0.6em 0 0 0.5em;
     }

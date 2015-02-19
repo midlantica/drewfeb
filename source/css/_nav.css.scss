@@ -228,20 +228,30 @@
 
 
 
+
+
+
+
+
+// MINI TABLET
+// MINI TABLET
+// MINI TABLET
+// MINI TABLET
+// MINI TABLET
 // MINI TABLET
 // MINI TABLET
 
 @include breakpoint($sm) {
     .nav h1 {
         font-size: 5.8em;
-        margin: .2em 0 0em 0;
+        margin: 0.1em 0 0em 0;
         letter-spacing: .02em;
         // background-color: green;
 
     }
     .nav h2 {
         font-size: 2.5em;
-        margin: .2em 0 .2em 0;
+        margin: 0em 0 0.1em 0;
         letter-spacing: 1px;
         clear: both;
     }
@@ -249,7 +259,7 @@
         width: auto;
         float: left;
         clear: both;
-        margin: 0 0 1em 0;
+        margin: 0 0 0.5em 0;
         padding: 0 0 0 0;
     }
     .nav .contact .email {
@@ -285,4 +295,63 @@
     }
 }
 
+// // MOBILE
+// // MOBILE
+// // MOBILE
+// // MOBILE
+// // MOBILE
+// // MOBILE
+
+// @include breakpoint($sm) {
+//     .nav h1 {
+//         font-size: 4.925em;
+//         clear: both;
+//         // background-color: red;
+
+//     }
+//     .nav h2 {
+//         font-size: 2.23em;
+//         margin: .2em 0 .15em 0;
+//         letter-spacing: .01em;
+//         clear: both;
+//     }
+//     .nav .contact {
+//         width: 100%;
+//         float: left;
+//         clear: both;
+//         margin: 0 0 1em 0;
+//     }
+//     .nav .contact .email {
+//         font-size: 1em;
+//         width: auto;
+//         display: block;
+//         float: left;
+//         clear: left;
+//         margin: 0;
+//     }
+//     .nav .contact .resume {
+//         font-size: 1em;
+//         width: auto;
+//         display: block;
+//         float: left;
+//         clear: right;
+//         margin: .2em 0 0 1em;
+//     }
+//     footer .nav .contact .email {
+//         font-size: 1em;
+//         width: auto;
+//         display: block;
+//         float: left;
+//         clear: left;
+//         margin: 0;
+//     }
+//     footer .nav .contact .resume {
+//         font-size: 1em;
+//         display: block;
+//         float: left;
+//         clear: right;
+//         margin: .15em 0 0 1em;
+//     }
+
+// }
 
