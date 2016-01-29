@@ -2,6 +2,7 @@
 @import 'layout';
 @import 'nav';
 @import 'skills';
+@import 'extras';
 
 //  >>>>>>>>>>>>>>
 // TYPE CONTROL
@@ -223,7 +224,7 @@ li {
             padding: .75em .5em 0em .5em;
             text-align: center;
             letter-spacing: .08em;
-            font-size: .85em;
+            font-size: .7em;
         }
         cite {
             color: $ivory;
@@ -231,7 +232,7 @@ li {
             margin: 0 4em 0 0;
             display: block;
             text-align: right;
-            font-size: .8em;
+            font-size: .7em;
             letter-spacing: .08em;
         }
     }

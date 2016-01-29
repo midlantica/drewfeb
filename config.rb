@@ -38,6 +38,7 @@ activate :automatic_image_sizes
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  activate :imageoptim
 end
 
 # Methods defined in the helpers block are available in templates
@@ -47,11 +48,16 @@ end
 #   end
 # end
 
+set :host, '4567'
+
 set :sass_dir, 'css'
 set :scss_dir, 'css'
 set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'img'
+
+set :site_keywords, "Drew Harper, UI/UX Designer, Front-End Coder, Interface Designer"
+
 
 #----------------------------
 
@@ -79,10 +85,12 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  activate :asset_hash
+  # activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets
+
+  activate :imageoptim
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
